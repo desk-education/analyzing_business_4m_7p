@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================================================================
+       META & DOCUMENT TITLE
+       Detailed Lesson Plan No. 6 — Grade 12 Entrepreneurship
+       Topic: Analyzing Business Operation: Production, the 4Ms, and the 7 Ps Marketing Mix
+       School: Don Vicente Rama Memorial National High School (DepEd Cebu City)
+       ========================================================================= -->
+       <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DLP No. 6: Analyzing Business Operation (4Ms &amp; 7 Ps) — Interactive Lesson Portal</title>
+
+  <!-- =========================================================================
+       EMBEDDED CSS STYLES
+       Designed with clean DepEd Navy (#17365D), Gold Accent (#D99B26), and
+       responsive classroom interactivity (timers, sticky tabs, interactive T-chart,
+       flashcards, SHA-256 protected randomized 20-item quiz, single-attempt lock
+       upon Google Sheets sync, hidden answer key protection, GCash donation modal,
+       cookie consent banner, pre-claim checklist, digital mastery badge &
+       certificate generator with PDF print/download, live search & progress tracker,
+       localStorage worksheet auto-save, footer controls, and print support).
+       ========================================================================= -->
+<!--
+  <style>
+    
+  </style>
+-->
+</head>
+<body>
+
+  <!-- =========================================================================
+       TOP CLASSROOM TOOLBAR (60-MINUTE SESSION TIMER & QUICK PRINT CONTROL)
+       ========================================================================= -->
+  <header class="classroom-toolbar">
+    <div class="toolbar-brand">
+      <span class="toolbar-badge">Entrepreneurship • Grade 12</span>
+      <span>DLP No. 6: Production (4Ms) &amp; Marketing Mix (7 Ps)</span>
+    </div>
+
+    <!-- Live Classroom Countdown Timer -->
+    <div class="timer-widget" aria-label="Classroom Activity Countdown Timer">
+      <span style="font-size: 0.8rem; font-weight: 600;">⏱ Timer:</span>
+      <span id="timerDisplay" class="timer-display">60:00</span>
+      <button class="timer-btn" onclick="startTimer()">Start</button>
+      <button class="timer-btn" onclick="pauseTimer()">Pause</button>
+      <button class="timer-btn" onclick="resetTimer(60)">60m</button>
+      <button class="timer-preset" onclick="resetTimer(5)" title="Introductory Activity">5m</button>
+      <button class="timer-preset" onclick="resetTimer(10)" title="Case Activity">10m</button>
+      <button class="timer-preset" onclick="resetTimer(15)" title="Group Application">15m</button>
+      <button class="timer-preset" onclick="resetTimer(7)" title="Formative Quiz">7m</button>
+    </div>
+
+    <div class="toolbar-actions">
+      <button class="action-btn" onclick="window.print()">🖨 Print Lesson / Handout</button>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MAIN LESSON CONTAINER
+       ========================================================================= -->
+  <main class="container">
+
+    <!-- -----------------------------------------------------------------------
+         ENHANCED INTERACTIVE PROGRESS TRACKER & INSTANT CONCEPT FILTER BAR
+         ----------------------------------------------------------------------- -->
+    <section class="lesson-utility-bar" aria-label="Lesson Progress and Concept Search">
+      <div class="progress-tracker-box">
+        <div class="progress-label-row">
+          <span>📊 Lesson Mastery &amp; Completion Progress</span>
+          <span id="progressPercentLabel">15% — Exploring Lesson</span>
+        </div>
+        <div class="progress-track">
+          <div id="lessonProgressFill" class="progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="concept-search-box">
+        <input
+          type="search"
+          id="conceptSearchInput"
+          class="concept-search-input"
+          placeholder="🔍 Quick-highlight concept (e.g., Manpower, JIT, Price, OEE)..."
+          oninput="highlightConcepts(this.value)"
+          aria-label="Quick-highlight business concept"
+        />
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         LESSON METADATA CARDS
+         ----------------------------------------------------------------------- -->
+    <section class="meta-grid" aria-label="Lesson Metadata">
+      <div class="meta-box">
+        <div class="meta-label">Learning Area</div>
+        <div class="meta-value">Entrepreneurship (Applied Track)</div>
+      </div>
+      <div class="meta-box">
+        <div class="meta-label">Grade Level &amp; Term</div>
+        <div class="meta-value">Grade 12 — 2nd Term (Quarter 3 / Week 6)</div>
+      </div>
+      <div class="meta-box">
+        <div class="meta-label">Duration</div>
+        <div class="meta-value">1 Hour (60 Minutes) — Single Session</div>
+      </div>
+      <div class="meta-box">
+        <div class="meta-label">Topic Title</div>
+        <div class="meta-value">Analyzing Business Operation: Production, the 4Ms, and the 7 Ps Marketing Mix</div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         STICKY INTERACTIVE SECTION FILTER TABS
+         ----------------------------------------------------------------------- -->
+    <nav class="nav-tabs" aria-label="Lesson Plan Section Filter">
+      <button class="nav-tab-btn active" onclick="filterSection('all', this)">📋 View Complete DLP</button>
+      <button class="nav-tab-btn" onclick="filterSection('sec-objectives', this)">🎯 I. Standards &amp; Objectives</button>
+      <button class="nav-tab-btn" onclick="filterSection('sec-content', this)">📚 II. Content &amp; Visuals</button>
+      <button class="nav-tab-btn" onclick="filterSection('sec-procedures', this)">⚡ IV. 4As Procedures (60m)</button>
+      <button class="nav-tab-btn" onclick="filterSection('sec-assessment', this)">🔒 20-Item Assessment</button>
+      <button class="nav-tab-btn" onclick="filterSection('sec-dev-guide', this)">🛠️ Developer Sync Guide</button>
+      <button class="nav-tab-btn" onclick="filterSection('sec-enclosures', this)">📎 Enclosures &amp; Reflection</button>
+    </nav>
+
+    <!-- =======================================================================
+         SECTION I: CONTENT STANDARDS, LEARNING COMPETENCIES & KSAV OBJECTIVES
+         ======================================================================= -->
+    <article id="sec-objectives" class="lesson-section">
+      <div class="section-banner">
+        <h2>I. STANDARDS, COMPETENCIES &amp; LEARNING OBJECTIVES</h2>
+        <span class="section-tag">DepEd MELCs &amp; Bloom's Taxonomy (KSAV)</span>
+      </div>
+      <div class="section-body">
+        <div class="standards-block">
+          <h3>Content Standards</h3>
+          <p>
+            The learner demonstrates understanding of concepts, underlying principles, and processes of developing a business plan, specifically focusing on the <strong>4Ms of Operations</strong> (<em>Manpower, Method, Machine, Material</em>) and the <strong>7 Ps of the Marketing Mix</strong> (<em>Product, Price, Place, Promotion, People, Process, Physical Evidence</em>) <em>(DepEd SHS Entrepreneurship Curriculum Guide / BOW MELCs)</em>.
+          </p>
+        </div>
+
+        <div class="standards-block" style="border-left-color: var(--navy-primary);">
+          <h3>Learning Competencies</h3>
+          <p style="margin-bottom: 6px;">
+            <strong>1.</strong> Describe the 4Ms (<em>Manpower, Method, Machine, Material</em>) of operations in relation to the business opportunity
+            <span class="competency-code">TLE_ICTAN11/12EM-Ia-2</span>; and
+          </p>
+          <p>
+            <strong>2.</strong> Describe the Marketing Mix (7 Ps) in relation to the business opportunity vis-à-vis: <em>Product, Place, Price, Promotion, People, Packaging/Physical Evidence, and Process</em>
+            <span class="competency-code">TLE_ICTAN11/12EM-Ia-1</span>.
+          </p>
+        </div>
+
+        <h3 class="sub-heading">Learning Objectives (KSAV Framework)</h3>
+        <p style="margin-bottom: 10px; font-style: italic; color: var(--text-muted);">
+          At the end of the 1-hour session, the Grade 12 learners are expected to:
+        </p>
+
+        <div class="ksav-grid">
+          <!-- Knowledge -->
+          <div class="ksav-card">
+            <span class="ksav-badge badge-k">Knowledge • Cognitive (Creating)</span>
+            <p>
+              <strong>Formulate</strong> an integrated Business Operations Blueprint that aligns the 4Ms of Production (<em>Manpower, Method, Machine, Material</em>) with the 7 Ps of the Marketing Mix for a proposed entrepreneurial venture.
+            </p>
+          </div>
+
+          <!-- Skills -->
+          <div class="ksav-card">
+            <span class="ksav-badge badge-s">Skills • Psychomotor (Origination)</span>
+            <p>
+              <strong>Construct</strong> a structured Inside-Out (4Ms) and Outside-In (7 Ps) operational audit matrix and operational workflow diagram to diagnose and resolve business bottlenecks.
+            </p>
+          </div>
+
+          <!-- Attitude -->
+          <div class="ksav-card">
+            <span class="ksav-badge badge-a">Attitude • Affective (Internalizing Values)</span>
+            <p>
+              <strong>Practice</strong> <em>critical thinking</em> and <em>entrepreneurial spirit</em> by objectively evaluating operational trade-offs, cost efficiency, and customer satisfaction when analyzing business case scenarios.
+            </p>
+          </div>
+
+          <!-- Values -->
+          <div class="ksav-card">
+            <span class="ksav-badge badge-v">Values • Affective (Internalizing Values)</span>
+            <p>
+              <strong>Practice</strong> <em>concern for others (Maka-tao)</em> and <em>stewardship of resources (Makakalikasan)</em> by advocating fair labor practices (<em>Manpower</em>), honest product claims (<em>Promotion</em>), and waste-minimizing production methods (<em>Material</em>) in business operations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- =======================================================================
+         SECTION II & III: COMPLETE LESSON CONTENT, CONCEPT VISUALS & RESOURCES
+         ======================================================================= -->
+    <article id="sec-content" class="lesson-section">
+      <div class="section-banner">
+        <h2>II. CONTENT &amp; III. LEARNING RESOURCES</h2>
+        <span class="section-tag">Full Core Text • Concept Visuals • Synergy Matrix</span>
+      </div>
+      <div class="section-body">
+
+        <!-- Core Introduction -->
+        <div class="content-intro">
+          <p style="margin-bottom: 8px;">
+            Analyzing a business operation requires looking at two distinct yet deeply interconnected engines: <strong>internal execution</strong> (how a business creates value) and <strong>external positioning</strong> (how a business delivers and communicates that value to the market).
+          </p>
+          <p>
+            The <strong>4Ms of Production</strong> govern the internal operational engine, while the <strong>7 Ps of the Marketing Mix</strong> govern the external commercial engine. Together, they form a complete operational blueprint.
+          </p>
+        </div>
+
+        <!-- 1. Production & The 4Ms of Operations (With Side-by-Side Concept Diagram) -->
+        <h3 class="sub-heading">1. Production &amp; The 4Ms of Operations</h3>
+        <div class="concept-visual-row">
+          <div>
+            <p style="margin-bottom: 10px;">
+              <strong>Production</strong> is the systematic process of transforming raw inputs (resources, data, labor) into finished outputs (goods or services) that possess utility and economic value. Whether a company manufactures physical smartphones or delivers cloud-based accounting software, production management focuses on maximizing <strong>efficiency</strong> (minimizing waste and cost) and <strong>effectiveness</strong> (meeting quality standards and customer demand).
+            </p>
+            <p>
+              To diagnose, design, or optimize any production system, operations managers rely on the <strong>4Ms Framework</strong>: <strong>Manpower, Method, Machine, and Material</strong>. <em>(Note: Expanded lean manufacturing models sometimes add Measurement and Mother Nature/Environment to create the "6Ms," though the core 4Ms remain the foundational pillars).</em>
+            </p>
+          </div>
+          <!-- Embedded Vector Diagram: Production Input-Transformation-Output + 4Ms -->
+          <figure class="concept-figure">
+            <svg viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Production Transformation System and 4Ms Diagram">
+              <rect x="6" y="6" width="408" height="188" rx="12" fill="#f0f6fc" stroke="#cbd5e1" stroke-width="2"/>
+              <text x="210" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#17365d">VALUE-TRANSFORMATION PRODUCTION SYSTEM</text>
+              <!-- Input Box -->
+              <rect x="20" y="48" width="105" height="110" rx="8" fill="#17365d"/>
+              <text x="72" y="72" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffd166">INPUTS (4Ms)</text>
+              <text x="72" y="92" text-anchor="middle" font-size="10" fill="#ffffff">• Manpower</text>
+              <text x="72" y="108" text-anchor="middle" font-size="10" fill="#ffffff">• Material</text>
+              <text x="72" y="124" text-anchor="middle" font-size="10" fill="#ffffff">• Machine</text>
+              <text x="72" y="140" text-anchor="middle" font-size="10" fill="#ffffff">• Method</text>
+              <!-- Arrow 1 -->
+              <path d="M130 103 L152 103" stroke="#d99b26" stroke-width="4"/>
+              <!-- Process Box -->
+              <rect x="158" y="48" width="106" height="110" rx="8" fill="#0d7377"/>
+              <text x="211" y="75" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">CONVERSION</text>
+              <text x="211" y="95" text-anchor="middle" font-size="10" fill="#e6f4f4">Assembly, SOPs,</text>
+              <text x="211" y="111" text-anchor="middle" font-size="10" fill="#e6f4f4">Lean Quality,</text>
+              <text x="211" y="127" text-anchor="middle" font-size="10" fill="#e6f4f4">Value Creation</text>
+              <!-- Arrow 2 -->
+              <path d="M268 103 L290 103" stroke="#d99b26" stroke-width="4"/>
+              <!-- Output Box -->
+              <rect x="295" y="48" width="105" height="110" rx="8" fill="#d99b26"/>
+              <text x="347" y="75" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f2542">OUTPUTS</text>
+              <text x="347" y="95" text-anchor="middle" font-size="10" fill="#0f2542">Finished Goods,</text>
+              <text x="347" y="111" text-anchor="middle" font-size="10" fill="#0f2542">Services &amp;</text>
+              <text x="347" y="127" text-anchor="middle" font-size="10" fill="#0f2542">Customer Value</text>
+              <text x="210" y="180" text-anchor="middle" font-size="10" font-weight="bold" fill="#2b547e">Goal: Maximize Efficiency (Low Waste) &amp; Effectiveness (High Quality)</text>
+            </svg>
+            <figcaption class="concept-caption">Figure 1.1: Internal Production Transformation Engine powered by the 4Ms.</figcaption>
+          </figure>
+        </div>
+
+        <div class="four-ms-grid">
+          <!-- Manpower -->
+          <div class="m-card">
+            <div class="m-card-header">
+              <div class="m-card-thumb" aria-hidden="true">
+                <!-- SVG Icon: Manpower -->
+                <svg width="34" height="34" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="18" cy="11" r="6" fill="#17365d"/>
+                  <path d="M7 30c0-6 5-10 11-10s11 4 11 10" fill="#2b547e"/>
+                  <path d="M11 9h14l-2-4H13z" fill="#d99b26"/>
+                </svg>
+              </div>
+              <h4>1. Manpower (Human Resources)</h4>
+            </div>
+            <p>
+              Manpower refers to the human labor, intellect, and skill sets required to execute operations. Even in heavily automated facilities, human oversight, engineering, and decision-making remain irreplaceable.
+            </p>
+            <div class="metric-pill">
+              <strong>Key Analytical Metrics:</strong> Labor productivity (output per labor hour), employee turnover rate, absenteeism, skill-gap ratios, and training ROI.
+            </div>
+            <div class="impact-pill">
+              <strong>Operational Impact:</strong> Poorly trained or understaffed teams create bottlenecks, increase defect rates, and inflate overtime costs. Conversely, cross-trained, motivated personnel allow a business to adapt rapidly to sudden spikes in demand.
+            </div>
+          </div>
+
+          <!-- Method -->
+          <div class="m-card">
+            <div class="m-card-header">
+              <div class="m-card-thumb" aria-hidden="true">
+                <!-- SVG Icon: Method -->
+                <svg width="34" height="34" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="6" width="11" height="8" rx="2" fill="#17365d"/>
+                  <rect x="21" y="6" width="11" height="8" rx="2" fill="#0d7377"/>
+                  <rect x="12" y="22" width="12" height="8" rx="2" fill="#d99b26"/>
+                  <path d="M15 10h6M18 14v8" stroke="#17365d" stroke-width="2.5"/>
+                </svg>
+              </div>
+              <h4>2. Method (Processes &amp; Workflows)</h4>
+            </div>
+            <p>
+              Method encompasses the standard operating procedures (SOPs), workflows, policies, and production methodologies used to convert inputs into outputs. It dictates <em>how</em> Manpower interacts with Machines and Materials.
+            </p>
+            <div class="metric-pill">
+              <strong>Key Analytical Metrics:</strong> Cycle time, throughput rate, bottleneck frequency, and defect/rework rates.
+            </div>
+            <div class="impact-pill">
+              <strong>Operational Impact:</strong> Adopting structured methodologies—such as <strong>Lean Manufacturing</strong> (eliminating waste), <strong>Six Sigma</strong> (reducing process variation), or <strong>Agile</strong> (iterative delivery in services/software)—directly lowers unit costs and ensures predictable, repeatable quality.
+            </div>
+          </div>
+
+          <!-- Machine -->
+          <div class="m-card">
+            <div class="m-card-header">
+              <div class="m-card-thumb" aria-hidden="true">
+                <!-- SVG Icon: Machine -->
+                <svg width="34" height="34" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="18" cy="18" r="8" fill="none" stroke="#17365d" stroke-width="4"/>
+                  <circle cx="18" cy="18" r="3" fill="#d99b26"/>
+                  <path d="M18 4v4M18 28v4M4 18h4M28 18h4M8 8l3 3M25 25l3 3M28 8l-3 3M11 25l-3 3" stroke="#2b547e" stroke-width="2.5"/>
+                </svg>
+              </div>
+              <h4>3. Machine (Technology &amp; Equipment)</h4>
+            </div>
+            <p>
+              Machine includes all physical machinery, tools, vehicles, facilities, and digital infrastructure (ERP software, servers, AI automation) utilized in production.
+            </p>
+            <div class="metric-pill">
+              <strong>Key Analytical Metrics:</strong> Overall Equipment Effectiveness (OEE), machine downtime, maintenance costs, depreciation schedules, and capacity utilization.
+            </div>
+            <div class="impact-pill">
+              <strong>Operational Impact:</strong> Outdated or poorly maintained equipment leads to unscheduled downtime and inconsistent output. Strategic capital expenditure (CapEx) in modern machinery or automation increases production capacity and lowers long-term marginal costs.
+            </div>
+          </div>
+
+          <!-- Material -->
+          <div class="m-card">
+            <div class="m-card-header">
+              <div class="m-card-thumb" aria-hidden="true">
+                <!-- SVG Icon: Material -->
+                <svg width="34" height="34" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                  <polygon points="18,4 31,11 18,18 5,11" fill="#d99b26"/>
+                  <polygon points="5,11 18,18 18,32 5,25" fill="#17365d"/>
+                  <polygon points="31,11 18,18 18,32 31,25" fill="#2b547e"/>
+                </svg>
+              </div>
+              <h4>4. Material (Inputs &amp; Supply Chain)</h4>
+            </div>
+            <p>
+              Material consists of the raw materials, semi-finished components, packaging, and consumable supplies required to create the final product. In service industries, "material" translates to informational inputs, software licenses, or physical consumables.
+            </p>
+            <div class="metric-pill">
+              <strong>Key Analytical Metrics:</strong> Inventory turnover, raw material yield/scrap rate, supplier lead times, and carrying costs.
+            </div>
+            <div class="impact-pill">
+              <strong>Operational Impact:</strong> Inventory management balances two risks: <strong>stockouts</strong> (halting production due to missing parts) and <strong>overstocking</strong> (tying up working capital in warehouse storage). Techniques like <strong>Just-in-Time (JIT)</strong> inventory minimize storage costs while relying on hyper-reliable suppliers.
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. The 7 Ps of the Marketing Mix (With Side-by-Side Concept Visual) -->
+        <h3 class="sub-heading">2. The 7 Ps of the Marketing Mix</h3>
+        <div class="concept-visual-row">
+          <div>
+            <p style="margin-bottom: 10px;">
+              Once a business produces value, it must bring that value to market. Originally conceptualized as the <strong>4 Ps</strong> (Product, Price, Place, Promotion) for physical goods, the framework expanded to the <strong>7 Ps</strong> to account for the rise of service-based economies, customer experience, and relationship management.
+            </p>
+            <p>
+              While the <strong>Core 4 Ps</strong> define the tangible offering and commercial mechanics, the <strong>Extended 3 Ps</strong> (People, Process, Physical Evidence) govern every human, operational, and physical touchpoint that builds customer trust.
+            </p>
+          </div>
+          <!-- Embedded Vector Diagram: 7 Ps Marketing Mix Hub -->
+          <figure class="concept-figure">
+            <svg viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The 7 Ps of Marketing Mix Diagram">
+              <rect x="6" y="6" width="408" height="188" rx="12" fill="#fef9ec" stroke="#fde68a" stroke-width="2"/>
+              <text x="210" y="26" text-anchor="middle" font-size="13" font-weight="bold" fill="#17365d">THE 7 Ps MARKETING MIX ARCHITECTURE</text>
+              <!-- Center Target Customer -->
+              <circle cx="210" cy="112" r="36" fill="#17365d" stroke="#d99b26" stroke-width="3"/>
+              <text x="210" y="109" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffd166">TARGET</text>
+              <text x="210" y="123" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">CUSTOMER</text>
+              <!-- Core 4 Ps Left -->
+              <rect x="20" y="42" width="115" height="26" rx="6" fill="#17365d"/><text x="77" y="59" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">1. Product (Core)</text>
+              <rect x="20" y="76" width="115" height="26" rx="6" fill="#17365d"/><text x="77" y="93" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">2. Price (Core)</text>
+              <rect x="20" y="110" width="115" height="26" rx="6" fill="#17365d"/><text x="77" y="127" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">3. Place (Core)</text>
+              <rect x="20" y="144" width="115" height="26" rx="6" fill="#17365d"/><text x="77" y="161" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">4. Promotion (Core)</text>
+              <!-- Extended 3 Ps Right -->
+              <rect x="275" y="54" width="125" height="30" rx="6" fill="#d99b26"/><text x="337" y="73" text-anchor="middle" font-size="10" font-weight="bold" fill="#0f2542">5. People (Ext.)</text>
+              <rect x="275" y="96" width="125" height="30" rx="6" fill="#d99b26"/><text x="337" y="115" text-anchor="middle" font-size="10" font-weight="bold" fill="#0f2542">6. Process (Ext.)</text>
+              <rect x="275" y="138" width="125" height="30" rx="6" fill="#d99b26"/><text x="337" y="157" text-anchor="middle" font-size="10" font-weight="bold" fill="#0f2542">7. Physical Evidence</text>
+              <!-- Connectors -->
+              <line x1="135" y1="55" x2="176" y2="98" stroke="#17365d" stroke-width="1.8"/>
+              <line x1="135" y1="89" x2="174" y2="106" stroke="#17365d" stroke-width="1.8"/>
+              <line x1="135" y1="123" x2="174" y2="118" stroke="#17365d" stroke-width="1.8"/>
+              <line x1="135" y1="157" x2="178" y2="128" stroke="#17365d" stroke-width="1.8"/>
+              <line x1="275" y1="69" x2="244" y2="98" stroke="#d99b26" stroke-width="1.8"/>
+              <line x1="275" y1="111" x2="246" y2="112" stroke="#d99b26" stroke-width="1.8"/>
+              <line x1="275" y1="153" x2="242" y2="128" stroke="#d99b26" stroke-width="1.8"/>
+            </svg>
+            <figcaption class="concept-caption">Figure 1.2: External Commercial Engine — Core 4 Ps + Extended 3 Ps.</figcaption>
+          </figure>
+        </div>
+
+        <div class="seven-ps-wrapper">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+            <strong style="color: var(--navy-primary); font-size: 1.05rem;">Interactive 7 Ps Marketing Mix Explorer (Core 4 Ps + Extended 3 Ps)</strong>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Source: Piscine / Getty Images Concept Framework</span>
+          </div>
+
+          <div class="seven-ps-grid">
+            <!-- 1. Product -->
+            <div class="p-card core-p">
+              <div class="p-card-header">
+                <div class="p-card-title-wrap">
+                  <div class="p-card-thumb">
+                    <svg width="22" height="22" viewBox="0 0 24 24"><path fill="#17365d" d="M12 2L3 7v10l9 5 9-5V7l-9-5zm0 2.3L18.5 8 12 11.7 5.5 8 12 4.3z"/></svg>
+                  </div>
+                  <span class="p-card-title">1. Product</span>
+                </div>
+                <span class="p-type-badge core-badge">Core 4 Ps</span>
+              </div>
+              <p style="font-size: 0.88rem;">
+                The tangible good or intangible service designed to satisfy a specific market need. Analysis includes core functionality, design, branding, packaging, warranties, and the <strong>Product Life Cycle</strong> (Introduction, Growth, Maturity, Decline).
+              </p>
+            </div>
+
+            <!-- 2. Price -->
+            <div class="p-card core-p">
+              <div class="p-card-header">
+                <div class="p-card-title-wrap">
+                  <div class="p-card-thumb">
+                    <svg width="22" height="22" viewBox="0 0 24 24"><path fill="#17365d" d="M21.4 11.6l-9-9C12 2.2 11.5 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .5.2 1 .6 1.4l9 9c.8.8 2 .8 2.8 0l7-7c.8-.8.8-2 0-2.8zM6.5 8C5.7 8 5 7.3 5 6.5S5.7 5 6.5 5 8 5.7 8 6.5 7.3 8 6.5 8z"/></svg>
+                  </div>
+                  <span class="p-card-title">2. Price</span>
+                </div>
+                <span class="p-type-badge core-badge">Core 4 Ps</span>
+              </div>
+              <p style="font-size: 0.88rem;">
+                The monetary value exchanged for the product—the only "P" that directly generates revenue rather than incurring costs. Strategies include <strong>cost-plus pricing</strong> (margin added to production cost), <strong>value-based pricing</strong> (priced according to perceived customer benefit), <strong>penetration pricing</strong> (low initial price to capture market share), and <strong>price skimming</strong> (high initial price for early adopters).
+              </p>
+            </div>
+
+            <!-- 3. Place -->
+            <div class="p-card core-p">
+              <div class="p-card-header">
+                <div class="p-card-title-wrap">
+                  <div class="p-card-thumb">
+                    <svg width="22" height="22" viewBox="0 0 24 24"><path fill="#17365d" d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/></svg>
+                  </div>
+                  <span class="p-card-title">3. Place (Distribution)</span>
+                </div>
+                <span class="p-type-badge core-badge">Core 4 Ps</span>
+              </div>
+              <p style="font-size: 0.88rem;">
+                The channels and logistics used to make the product accessible to the target customer. This includes direct-to-consumer (D2C) e-commerce, wholesale B2B distribution, brick-and-mortar retail, and omnichannel fulfillment.
+              </p>
+            </div>
+
+            <!-- 4. Promotion -->
+            <div class="p-card core-p">
+              <div class="p-card-header">
+                <div class="p-card-title-wrap">
+                  <div class="p-card-thumb">
+                    <svg width="22" height="22" viewBox="0 0 24 24"><path fill="#17365d" d="M18 11v2h4v-2h-4zm-2 6.6l3.2 2.4 1.2-1.6-3.2-2.4-1.2 1.6zm4.4-11.2l-1.2-1.6L16 7.2l1.2 1.6 3.2-2.4zM13 5L7 9H3v6h4l6 4V5z"/></svg>
+                  </div>
+                  <span class="p-card-title">4. Promotion</span>
+                </div>
+                <span class="p-type-badge core-badge">Core 4 Ps</span>
+              </div>
+              <p style="font-size: 0.88rem;">
+                All communication strategies used to generate awareness, persuade buyers, and build brand equity. This spans digital marketing (SEO, paid social, content), public relations, sales promotions, personal selling, and sponsorships.
+              </p>
+            </div>
+
+            <!-- 5. People -->
+            <div class="p-card ext-p">
+              <div class="p-card-header">
+                <div class="p-card-title-wrap">
+                  <div class="p-card-thumb" style="background: var(--gold-light);">
+                    <svg width="22" height="22" viewBox="0 0 24 24"><path fill="#8a5a00" d="M16 11c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm-8 0c1.7 0 3-1.3 3-3S9.7 5 8 5 5 6.3 5 8s1.3 3 3 3zm0 2c-2.3 0-7 1.2-7 3.5V19h14v-2.5c0-2.3-4.7-3.5-7-3.5z"/></svg>
+                  </div>
+                  <span class="p-card-title">5. People</span>
+                </div>
+                <span class="p-type-badge ext-badge">Extended 3 Ps</span>
+              </div>
+              <p style="font-size: 0.88rem;">
+                Every human touchpoint that shapes the customer's perception of the brand—from frontline retail staff and customer support agents to executives and brand ambassadors. In service businesses, the employee <em>is</em> the product experience.
+              </p>
+            </div>
+
+            <!-- 6. Process -->
+            <div class="p-card ext-p">
+              <div class="p-card-header">
+                <div class="p-card-title-wrap">
+                  <div class="p-card-thumb" style="background: var(--gold-light);">
+                    <svg width="22" height="22" viewBox="0 0 24 24"><path fill="#8a5a00" d="M12 4V1L8 5l4 4V6c3.3 0 6 2.7 6 6 0 1-.3 2-.7 2.8l1.5 1.5C19.6 15 20 13.6 20 12c0-4.4-3.6-8-8-8zm0 14c-3.3 0-6-2.7-6-6 0-1 .3-2 .7-2.8L5.2 7.7C4.4 9 4 10.4 4 12c0 4.4 3.6 8 8 8v3l4-4-4-4v3z"/></svg>
+                  </div>
+                  <span class="p-card-title">6. Process</span>
+                </div>
+                <span class="p-type-badge ext-badge">Extended 3 Ps</span>
+              </div>
+              <p style="font-size: 0.88rem;">
+                The customer-facing systems and workflows that deliver the product or service. While the "Method" in the 4Ms looks at internal factory efficiency, "Process" in the 7 Ps looks at <strong>customer friction</strong>—such as how fast an e-commerce checkout loads, how seamless onboarding is, or how quickly refunds are processed.
+              </p>
+            </div>
+
+            <!-- 7. Physical Evidence -->
+            <div class="p-card ext-p">
+              <div class="p-card-header">
+                <div class="p-card-title-wrap">
+                  <div class="p-card-thumb" style="background: var(--gold-light);">
+                    <svg width="22" height="22" viewBox="0 0 24 24"><path fill="#8a5a00" d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4zm-1 15l-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7z"/></svg>
+                  </div>
+                  <span class="p-card-title">7. Physical Evidence</span>
+                </div>
+                <span class="p-type-badge ext-badge">Extended 3 Ps</span>
+              </div>
+              <p style="font-size: 0.88rem;">
+                Tangible cues that validate quality and reduce perceived risk, especially critical for intangible services. Examples include clean retail store architecture, intuitive app UI/UX, professional packaging, verified customer reviews, and case studies.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Operational Synergy (With Alignment Visual Diagram + Synergy Table) -->
+        <h3 class="sub-heading">3. Operational Synergy: How the 4Ms and 7 Ps Connect</h3>
+        <div class="concept-visual-row">
+          <div>
+            <p style="margin-bottom: 10px;">
+              A business fails when its internal production capabilities (4Ms) are misaligned with its external market promises (7 Ps). Analyzing a business holistically means mapping the direct dependencies between both frameworks so every external customer promise is backed by internal operational capacity.
+            </p>
+            <p>
+              Use the <strong>Synergy &amp; Failure Mode Matrix</strong> below to trace how each element of the 7 Ps depends on specific 4Ms pillars.
+            </p>
+          </div>
+          <!-- Embedded Vector Diagram: 4Ms <-> 7 Ps Operational Synergy Bridge -->
+          <figure class="concept-figure">
+            <svg viewBox="0 0 420 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="4Ms to 7 Ps Operational Synergy Bridge Diagram">
+              <rect x="6" y="6" width="408" height="178" rx="12" fill="#e6f4f4" stroke="#b2dfdb" stroke-width="2"/>
+              <text x="210" y="26" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d7377">OPERATIONAL SYNERGY BRIDGE (INSIDE-OUT ↔ OUTSIDE-IN)</text>
+              <rect x="22" y="44" width="145" height="115" rx="8" fill="#17365d"/>
+              <text x="94" y="66" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffd166">INTERNAL ENGINE (4Ms)</text>
+              <text x="94" y="88" text-anchor="middle" font-size="10" fill="#ffffff">Manpower</text>
+              <text x="94" y="106" text-anchor="middle" font-size="10" fill="#ffffff">Material &amp; Machine</text>
+              <text x="94" y="124" text-anchor="middle" font-size="10" fill="#ffffff">Method</text>
+              <text x="94" y="144" text-anchor="middle" font-size="9" fill="#cbd5e1">(Creates Value &amp; Capacity)</text>
+
+              <path d="M174 82 L246 82" stroke="#17365d" stroke-width="3"/>
+              <path d="M246 118 L174 118" stroke="#d99b26" stroke-width="3"/>
+              <text x="210" y="75" text-anchor="middle" font-size="9" font-weight="bold" fill="#17365d">Enables</text>
+              <text x="210" y="133" text-anchor="middle" font-size="9" font-weight="bold" fill="#8a5a00">Demands</text>
+
+              <rect x="253" y="44" width="145" height="115" rx="8" fill="#d99b26"/>
+              <text x="325" y="66" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f2542">EXTERNAL ENGINE (7 Ps)</text>
+              <text x="325" y="88" text-anchor="middle" font-size="10" fill="#0f2542">People &amp; Promotion</text>
+              <text x="325" y="106" text-anchor="middle" font-size="10" fill="#0f2542">Product &amp; Phys. Evidence</text>
+              <text x="325" y="124" text-anchor="middle" font-size="10" fill="#0f2542">Process, Place &amp; Price</text>
+              <text x="325" y="144" text-anchor="middle" font-size="9" fill="#0f2542">(Delivers Customer Trust)</text>
+            </svg>
+            <figcaption class="concept-caption">Figure 1.3: Bidirectional alignment between 4Ms execution and 7 Ps promises.</figcaption>
+          </figure>
+        </div>
+
+        <div class="table-responsive">
+          <table class="synergy-table">
+            <thead>
+              <tr>
+                <th style="width: 18%;">Marketing Mix (7 Ps)</th>
+                <th style="width: 24%;">Operational Dependency (4Ms)</th>
+                <th style="width: 58%;">Failure Mode if Misaligned</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Product</strong></td>
+                <td>Material &amp; Machine</td>
+                <td>Marketing promises "premium durability," but procurement buys cheap raw Materials, leading to high return rates.</td>
+              </tr>
+              <tr>
+                <td><strong>Price</strong></td>
+                <td>All 4Ms (Unit Cost)</td>
+                <td>Marketing adopts an aggressive low-cost Price strategy, but inefficient Methods and high Manpower costs result in negative profit margins.</td>
+              </tr>
+              <tr>
+                <td><strong>Place</strong></td>
+                <td>Material &amp; Method</td>
+                <td>Marketing expands to nationwide e-commerce (Place), but inventory Methods cannot handle multi-warehouse fulfillment, causing stockouts.</td>
+              </tr>
+              <tr>
+                <td><strong>Promotion</strong></td>
+                <td>Machine &amp; Manpower</td>
+                <td>A viral Promotion spikes demand by 300%, overwhelming Machine capacity and Manpower, delaying deliveries and ruining brand trust.</td>
+              </tr>
+              <tr>
+                <td><strong>People</strong></td>
+                <td>Manpower</td>
+                <td>Brand positions itself as "white-glove concierge service," but high Manpower turnover leaves untrained staff handling VIP clients.</td>
+              </tr>
+              <tr>
+                <td><strong>Process</strong></td>
+                <td>Method &amp; Machine</td>
+                <td>Marketing promises "instant 5-minute approval," but legacy software (Machine) and manual approvals (Method) take 3 days.</td>
+              </tr>
+              <tr>
+                <td><strong>Physical Evidence</strong></td>
+                <td>Material &amp; Machine</td>
+                <td>Luxury branding requires flawless packaging (Physical Evidence), which fails if printing Machines produce misaligned labels.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 4. Practical Application: Diagnosing a Business Operation -->
+        <h3 class="sub-heading">4. Practical Application: Diagnosing a Business Operation</h3>
+        <p>When evaluating an existing business or launching a new venture, use a structured two-step audit:</p>
+        <div class="audit-box-grid">
+          <div class="audit-step">
+            <h4 style="color: var(--teal-accent); margin-bottom: 6px;">Step 1: Inside-Out Audit (4Ms)</h4>
+            <p style="font-size: 0.92rem;">
+              Calculate the <strong>Cost of Goods Sold (COGS)</strong> and operational capacity. Identify the single biggest bottleneck—is output constrained by a slow <strong>Machine</strong>, a lack of skilled <strong>Manpower</strong>, an outdated <strong>Method</strong>, or unreliable <strong>Material</strong> suppliers?
+            </p>
+          </div>
+          <div class="audit-step">
+            <h4 style="color: var(--teal-accent); margin-bottom: 6px;">Step 2: Outside-In Audit (7 Ps)</h4>
+            <p style="font-size: 0.92rem;">
+              Evaluate customer acquisition and retention. If customers aren't buying, is it a <strong>Product-Market Fit</strong> issue, a <strong>Price</strong> mismatch, poor <strong>Place</strong> visibility, or weak <strong>Promotion</strong>? If customers buy once and churn, audit the extended 3 Ps: rude <strong>People</strong>, clunky <strong>Processes</strong>, or lackluster <strong>Physical Evidence</strong>.
+            </p>
+          </div>
+        </div>
+
+        <!-- III. Learning Resources -->
+        <h3 class="sub-heading">III. Learning Resources</h3>
+        <ul class="enclosure-list">
+          <li><strong>References:</strong> DepEd K to 12 Senior High School Applied Track Subject – Entrepreneurship Curriculum Guide &amp; Budget of Work (BOW), Quarter 3 / 2nd Term; Teacher's Guide &amp; Learner's Module in Entrepreneurship (4Ms of Production &amp; 7 Ps Marketing Mix).</li>
+          <li><strong>Instructional Materials &amp; Equipment:</strong> Laptop, LED TV / Projector, PowerPoint Presentation (Enclosure E), printed Business Audit Case Cards, Manila paper / Cartolina, markers, and Student Handouts &amp; Worksheets (Enclosures A–F).</li>
+        </ul>
+      </div>
+      <a href=""></a>
+    </article>
+
+    <!-- =======================================================================
+         SECTION IV: 4As INSTRUCTIONAL PROCEDURES (60-MINUTE SESSION)
+         ======================================================================= -->
+    <article id="sec-procedures" class="lesson-section">
+      <div class="section-banner">
+        <h2>IV. PROCEDURES — 1-HOUR (60-MINUTE) 4As INSTRUCTIONAL FLOW</h2>
+        <span class="section-tag">Introductory • Activity • Analysis • Abstraction • Application • Wrap-Up</span>
+      </div>
+      <div class="section-body">
+
+        <!-- 1. Introductory Activity -->
+        <div class="procedure-step">
+          <div class="step-header">
+            <span class="step-title">1. Introductory Activity: Warm-Up &amp; Hook</span>
+            <span class="time-badge">5 Minutes</span>
+          </div>
+          <p style="margin-bottom: 6px;">
+            <strong>Preliminaries (2 mins):</strong> Prayer, warm greetings, attendance check, and quick classroom safety/cleanliness reminder.
+          </p>
+          <p style="margin-bottom: 6px;">
+            <strong>Warm-Up Game — "Two Sides of the Milk Tea Cup" (3 mins):</strong> The teacher displays a popular local milk tea / iced coffee cup (or projected image) and asks learners to rapidly call out two things:
+            <em>(1) What went into making this drink behind the counter?</em> (e.g., tea leaves, pearl cooker, barista, recipe) and
+            <em>(2) What made you buy it at the counter?</em> (e.g., ₱89 price, Instagram promo, aesthetic cup, friendly cashier).
+          </p>
+          <p style="background: var(--navy-light); padding: 8px 12px; border-radius: 6px; font-style: italic;">
+            <strong>Transition Statement:</strong> "Every successful business runs on two engines: what happens behind the scenes to create the product (the 4Ms of Production) and what happens up front to win the customer (the 7 Ps of Marketing). Today, we will learn how to diagnose and align both!"
+          </p>
+        </div>
+
+        <!-- 2. Activity -->
+        <div class="procedure-step">
+          <div class="step-header">
+            <span class="step-title">2. Activity: Cooperative Diagnostic Case Analysis</span>
+            <span class="time-badge">10 Minutes</span>
+          </div>
+          <p><strong>Interactive Strategy:</strong> Cooperative Learning &amp; Diagnostic Case Analysis — <em>"Viral Crisis at Cebu Cravings Bakehouse"</em></p>
+          <div class="case-box">
+            <strong>Mini-Case Scenario Card:</strong> "Cebu Cravings Bakehouse launched a viral TikTok promo offering 'Buy 1 Get 1 Artisanal Ube Cheese Pandesal for ₱99.' Orders surged by 300% overnight. However, their single small deck oven overheated, their two bakers got exhausted and mixed up salt with sugar, flour stocks ran out by noon, and online customers waited 3 hours with zero replies from the cashier—resulting in 1-star reviews."
+          </div>
+          <p style="margin-bottom: 8px;">
+            <strong>Instructions:</strong> Divide the class into four (4) buzz groups. Using a T-Chart on Manila paper, each group sorts the operational breakdowns into <strong>Column A: Internal Production Failures (4Ms)</strong> and <strong>Column B: External Customer Experience Failures (7 Ps)</strong>, followed by a quick 2-minute gallery check.
+          </p>
+
+          <!-- Interactive Digital T-Chart Simulation for Classroom Projection -->
+          <div class="tchart-interactive">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+              <strong style="color: var(--navy-primary);">🖱 Interactive Digital T-Chart Sorter (Click each clue to sort it!):</strong>
+              <button class="btn-secondary" style="padding: 4px 10px; font-size: 0.78rem;" onclick="resetTChart()">Reset T-Chart</button>
+            </div>
+            <div id="tchartChips" class="tchart-chips">
+              <button class="tchart-chip" data-col="A" data-label="Overheated Deck Oven → Machine" onclick="sortChip(this)">Overheated Deck Oven</button>
+              <button class="tchart-chip" data-col="A" data-label="Exhausted Bakers Mixed Salt & Sugar → Manpower / Method" onclick="sortChip(this)">Exhausted Bakers Mixed Salt &amp; Sugar</button>
+              <button class="tchart-chip" data-col="A" data-label="Flour Stocks Ran Out by Noon → Material" onclick="sortChip(this)">Flour Stocks Ran Out by Noon</button>
+              <button class="tchart-chip" data-col="B" data-label="Buy 1 Get 1 ₱99 TikTok Promo → Price & Promotion" onclick="sortChip(this)">Buy 1 Get 1 ₱99 TikTok Promo</button>
+              <button class="tchart-chip" data-col="B" data-label="3-Hour Delivery Wait → Process" onclick="sortChip(this)">3-Hour Delivery Wait</button>
+              <button class="tchart-chip" data-col="B" data-label="Zero Replies from Cashier → People" onclick="sortChip(this)">Zero Replies from Cashier</button>
+              <button class="tchart-chip" data-col="B" data-label="1-Star Online Reviews → Physical Evidence" onclick="sortChip(this)">1-Star Online Reviews</button>
+            </div>
+            <div class="tchart-columns">
+              <div class="tchart-col">
+                <h5>Column A: Internal Production Failures (4Ms)</h5>
+                <div id="colAList"></div>
+              </div>
+              <div class="tchart-col">
+                <h5>Column B: External Customer Failures (7 Ps)</h5>
+                <div id="colBList"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Analysis -->
+        <div class="procedure-step">
+          <div class="step-header">
+            <span class="step-title">3. Analysis: Facilitated Reflective Discussion (HOTS)</span>
+            <span class="time-badge">8 Minutes</span>
+          </div>
+          <p style="margin-bottom: 10px; font-size: 0.9rem; color: var(--text-muted);">
+            Click each HOTS question below to reveal teacher facilitation notes during class discussion:
+          </p>
+
+          <div class="hots-item">
+            <button class="hots-question" onclick="toggleHots(this)">
+              <span>1. Essential Question 1 (Diagnostic): Looking at your T-Charts, what was the root cause of Cebu Cravings Bakehouse's failure—was it a lack of marketing demand, or a mismatch between their internal capacity and their external promise? Explain why.</span>
+              <span>▼</span>
+            </button>
+            <div class="hots-answer">
+              <strong>Expected Insight:</strong> It was a severe internal-external mismatch. Their <em>Promotion</em> and <em>Price</em> (7 Ps) generated massive demand, but their <em>Machine</em> (one oven), <em>Manpower</em> (two bakers), and <em>Material</em> (flour supply) lacked the capacity to fulfill it.
+            </div>
+          </div>
+
+          <div class="hots-item">
+            <button class="hots-question" onclick="toggleHots(this)">
+              <span>2. Essential Question 2 (Systemic Impact): How did a single breakdown in internal operations (such as an overheated oven or depleted flour supply) trigger a domino effect across their pricing, delivery process, and brand reputation?</span>
+              <span>▼</span>
+            </button>
+            <div class="hots-answer">
+              <strong>Expected Insight:</strong> Oven failure and baker fatigue caused defective taste (salt/sugar mix-up) and 3-hour delays (<em>Process</em>), while unresponsive staff (<em>People</em>) turned frustrated buyers into 1-star reviewers (<em>Physical Evidence</em>), destroying brand trust.
+            </div>
+          </div>
+
+          <div class="hots-item">
+            <button class="hots-question" onclick="toggleHots(this)">
+              <span>3. Transition Question to Abstraction: If you were hired as the Operations and Marketing Consultant for this business, what systematic frameworks would you use to audit and synchronize their factory floor with their customer promise?</span>
+              <span>▼</span>
+            </button>
+            <div class="hots-answer">
+              <strong>Transition Link:</strong> Entrepreneurs use the <strong>4Ms of Production</strong> (Inside-Out Audit) and the <strong>7 Ps of the Marketing Mix</strong> (Outside-In Audit) to align operational capacity with marketing commitments.
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Abstraction -->
+        <div class="procedure-step">
+          <div class="step-header">
+            <span class="step-title">4. Abstraction: Interactive Mini-Lecture &amp; Synthesis</span>
+            <span class="time-badge">12 Minutes</span>
+          </div>
+          <ul class="enclosure-list">
+            <li><strong>Dual-Engine Business Model:</strong> A sustainable business operation relies on two synchronized engines—<strong>Internal Execution (4Ms of Production)</strong> and <strong>External Positioning (7 Ps of the Marketing Mix)</strong>.</li>
+            <li><strong>The 4Ms of Production (Inside-Out Engine):</strong> <em>Manpower</em> (skilled labor &amp; productivity), <em>Method</em> (SOPs, Lean/Six Sigma workflows), <em>Machine</em> (equipment capacity, OEE, digital tools), and <em>Material</em> (raw inputs, supply chain, Just-in-Time inventory).</li>
+            <li><strong>The 7 Ps of Marketing Mix (Outside-In Engine):</strong> The Core 4 Ps (<em>Product, Price, Place, Promotion</em>) define the tactical offering, while the Extended 3 Ps (<em>People, Process, Physical Evidence</em>) govern service quality, customer friction, and tangible proof of value.</li>
+            <li><strong>Operational Synergy Principle:</strong> Every external promise in the 7 Ps depends directly on internal capabilities in the 4Ms (e.g., premium Product quality depends on Material &amp; Machine; fast checkout Process depends on Method &amp; digital Machine). Conducting a <strong>Two-Step Operational Audit (Inside-Out + Outside-In)</strong> prevents bottlenecks, protects profit margins, and builds customer trust.</li>
+          </ul>
+        </div>
+
+        <!-- 5. Application -->
+        <div class="procedure-step">
+          <div class="step-header">
+            <span class="step-title">5. Application: Differentiated 4-Group Performance Lab</span>
+            <span class="time-badge">15 Minutes (10m Prep + 5m Pitch)</span>
+          </div>
+          <p style="margin-bottom: 10px;">
+            <strong>Scenario Context:</strong> Each group acts as a task force launching <strong>"EcoSip Cebu"</strong>, a student-led enterprise producing reusable bamboo-insulated tumblers for Senior High School students and commuters. Each group executes a specific Learning Objective using the sample pattern below:
+          </p>
+
+          <div class="group-grid">
+            <!-- Group 1 -->
+            <div class="group-card">
+              <div>
+                <h4>Group 1 — Knowledge Objective (Formulate)</h4>
+                <p style="font-size: 0.9rem;">
+                  <strong>Task:</strong> Formulate an integrated 4Ms-to-7Ps Business Operations Blueprint for EcoSip Cebu by mapping how each of the 4Ms supports at least four (4) Ps of the Marketing Mix.
+                </p>
+              </div>
+              <div class="sample-pattern">
+                <strong>Sample Pattern &amp; Explanation:</strong><br />
+                <em>Material</em> (food-grade 304 stainless steel &amp; locally sourced Cebu bamboo) &rarr; <em>Product</em> (durable, eco-friendly tumbler) &amp; <em>Physical Evidence</em> (laser-engraved quality seal).<br />
+                <strong>Explanation:</strong> Selecting sustainable, high-grade materials directly validates the brand's eco-premium product promise.
+              </div>
+            </div>
+
+            <!-- Group 2 -->
+            <div class="group-card">
+              <div>
+                <h4>Group 2 — Skills Objective (Construct)</h4>
+                <p style="font-size: 0.9rem;">
+                  <strong>Task:</strong> Construct a two-step Inside-Out (4Ms) and Outside-In (7 Ps) Operational Audit Matrix to diagnose and fix a simulated bottleneck where EcoSip Cebu faces a 25% defect rate in laser-engraving and a 2-day delay in online order fulfillment.
+                </p>
+              </div>
+              <div class="sample-pattern">
+                <strong>Sample Pattern &amp; Explanation:</strong><br />
+                <em>Audit Row:</em> [Bottleneck: 2-day delivery delay] &rarr; [Root Cause: Manual <em>Method</em> in order packing &amp; understaffed <em>Manpower</em>] &rarr; [Corrective Action: Introduce batch-packing SOP (<em>Method</em>) and cross-train 2 logistics staff (<em>Manpower</em>) to fulfill <em>Place/Process</em> promises within 24 hours].<br />
+                <strong>Explanation:</strong> Pinpointing the exact 'M' allows targeted operational fixes.
+              </div>
+            </div>
+
+            <!-- Group 3 -->
+            <div class="group-card">
+              <div>
+                <h4>Group 3 — Attitude Objective (Critical Thinking)</h4>
+                <p style="font-size: 0.9rem;">
+                  <strong>Task:</strong> Practice critical thinking and entrepreneurial spirit by evaluating two pricing-and-production options for EcoSip Cebu: <strong>Option A</strong> (Low ₱199 Penetration Price using cheaper plastic-lined materials) vs. <strong>Option B</strong> (₱349 Value-Based Price using insulated steel and a 1-year warranty), and present a data-backed recommendation.
+                </p>
+              </div>
+              <div class="sample-pattern">
+                <strong>Sample Pattern &amp; Explanation:</strong><br />
+                <em>Decision Output:</em> "We recommend Option B because although Option A lowers initial <em>Price</em>, weak <em>Material</em> causes leaks, leading to high refund costs and lost customer trust."<br />
+                <strong>Explanation:</strong> Critical entrepreneurs weigh long-term brand equity and unit margins over short-term cheap shortcuts.
+              </div>
+            </div>
+
+            <!-- Group 4 -->
+            <div class="group-card">
+              <div>
+                <h4>Group 4 — Values Objective (Maka-tao &amp; Makakalikasan)</h4>
+                <p style="font-size: 0.9rem;">
+                  <strong>Task:</strong> Practice concern for others (<em>Maka-tao</em>) and environmental stewardship (<em>Makakalikasan</em>) by drafting a 4-point Ethical Operations &amp; Sustainability Charter covering worker safety/fair wages (<em>Manpower</em>), zero-waste bamboo scrap recycling (<em>Material</em>), and truthful eco-labeling (<em>Promotion</em>).
+                </p>
+              </div>
+              <div class="sample-pattern">
+                <strong>Sample Pattern &amp; Explanation:</strong><br />
+                <em>Charter Clause:</em> "<em>Manpower &amp; Maka-tao:</em> All workshop artisans must be provided protective heat/dust gear, ergonomic 8-hour shifts, and fair piece-rate pay; no deceptive greenwashing in <em>Promotion</em>."<br />
+                <strong>Explanation:</strong> Ethical operations protect human dignity and the environment while building authentic customer loyalty.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Assignment & Wrap-Up -->
+        <div class="procedure-step" style="margin-bottom: 0;">
+          <div class="step-header">
+            <span class="step-title">6. Assignment &amp; Wrap-Up / Concluding Activity</span>
+            <span class="time-badge">3 Minutes (2m + 1m)</span>
+          </div>
+          <p style="margin-bottom: 8px;">
+            <strong>Assignment (2 mins) — Enriching &amp; Strengthening the Day's Lesson ("Neighborhood Micro-Enterprise Rapid Audit"):</strong>
+            Interview or observe one local micro-business in your barangay (e.g., <em>sari-sari</em> store, <em>carenderia</em>, printing shop, or milk tea stall). On a 1-page worksheet (see Enclosure A), identify: (1) their 4Ms of Production, (2) their 7 Ps Marketing Mix, and (3) one actionable recommendation to align an internal 'M' with an external 'P' to improve profitability or customer satisfaction. Submit next meeting.
+          </p>
+          <p style="background: var(--gold-light); padding: 10px 14px; border-radius: 6px; border-left: 4px solid var(--gold-accent);">
+            <strong>Wrap-Up / Concluding Activity (1 min) — Exit Synthesis ("The 4M + 7P Golden Rule"):</strong>
+            The teacher leads a 30-second choral recap: <em>"Great marketing (7 Ps) brings customers in the door once; great operations (4Ms) keeps them coming back forever!"</em> Learners complete a 1-sentence Exit Ticket on a sticky note: <em>"One operational bottleneck I learned how to diagnose today is..."</em> before dismissing the class.
+          </p>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- =======================================================================
+         SECTION V: SHA-256 PROTECTED RANDOMIZED 20-ITEM ASSESSMENT + CHECKLIST
+         ======================================================================= -->
+    <article id="sec-assessment" class="lesson-section">
+      <div class="section-banner">
+        <h2>IV-B. 20-ITEM MASTERY ASSESSMENT (RANDOMIZED &amp; ACCESS-PROTECTED)</h2>
+        <span class="section-tag">Single-Attempt Google Sheets Lock • Protected Answer Keys • Badge &amp; Certificate</span>
+      </div>
+      <div class="section-body">
+
+        <!-- Student Access Code Gate (Hidden Quiz until SHA-256 verified) -->
+        <div id="studentAccessGate" class="access-gate-box">
+          <div style="font-size: 2.2rem; margin-bottom: 6px;">🔒</div>
+          <h3>Student Assessment Access Gate</h3>
+          <p style="font-size: 0.92rem; color: var(--text-muted);">
+            This 20-item assessment is locked to prevent unauthorized viewing prior to testing. Please enter the <strong>Student Access Code</strong> provided by your teacher to unlock the randomized questions.
+          </p>
+          <div class="access-input-group">
+            <input type="password" id="studentCodeInput" class="access-input" placeholder="Enter Student Access Code..." onkeydown="if(event.key==='Enter') verifyStudentAccess()" />
+            <button type="button" class="btn-primary" onclick="verifyStudentAccess()">🔓 Unlock Assessment</button>
+          </div>
+          <div id="studentGateError" class="gate-error">❌ Invalid Student Access Code. Please verify with your teacher and try again.</div>
+        </div>
+
+        <!-- Unlocked 20-Item Assessment Container (Hidden by default) -->
+        <div id="unlockedAssessmentArea" style="display: none;">
+
+          <!-- Single-Attempt Completion Notice Banner (Shown once submitted to Google Sheets) -->
+          <div id="singleAttemptLockBanner" class="single-attempt-lock-banner">
+            <h4>✅ Official Single-Attempt Assessment Submitted &amp; Locked</h4>
+            <p id="singleAttemptSummaryText" style="font-size: 0.92rem; color: var(--text-dark);">
+              Your assessment response has been officially recorded and synchronized to Database. To preserve assessment integrity, retakes are disabled and correct answers remain concealed on the questionnaire.
+            </p>
+          </div>
+
+          <div class="shuffle-notice-pill">
+            🔀 Dynamic Randomization &amp; Integrity Shield Active: Questions and choices are freshly shuffled on every reload, answers remain hidden after submission, and one official submission is permitted once synced to Google Sheets.
+          </div>
+
+          <p style="margin-bottom: 14px;">
+            <strong>Directions:</strong> Fill in your complete student details below (required for Database synchronization, Digital Mastery Badge, and Certificate of Completion), answer all <strong>20 items</strong>, and click <strong>"Submit, Grade &amp; Sync to Database"</strong>.
+          </p>
+
+          <!-- Student Identification Fields for Google Sheets & Certificate -->
+          <div class="student-info-bar">
+            <div>
+              <label for="stuFullName">Student's Full Name *</label>
+              <input type="text" id="stuFullName" placeholder="e.g., Juan Dela Cruz" required />
+            </div>
+            <div>
+              <label for="stuGradeLevel">Grade Level *</label>
+              <input type="text" id="stuGradeLevel" value="Grade 12" placeholder="e.g., Grade 12" required />
+            </div>
+            <div>
+              <label for="stuSection">Section *</label>
+              <input type="text" id="stuSection" placeholder="e.g., ABM - Rizal / TVL - ICT" required />
+            </div>
+          </div>
+
+          <form id="quizForm20">
+            <!-- Dynamically rendered & randomized 20-item assessment (Part I: 1-10 MC, Part II: 11-15 Matching, Part III: 16-20 True/False) -->
+            <div id="quiz20Container"></div>
+
+            <div class="quiz-controls">
+              <button type="button" id="submitQuiz20Btn" class="btn-primary" onclick="gradeAndSyncQuiz20()">✅ Submit, Grade &amp; Sync to Google Sheets</button>
+              <button type="button" id="resetQuiz20Btn" class="btn-secondary" onclick="resetQuiz20()">🔄 Reset &amp; Re-Shuffle Assessment</button>
+              <div id="scoreBanner" class="score-banner"></div>
+            </div>
+
+            <!-- Live Google Sheets Synchronization Status Message -->
+            <div id="syncStatusBox" class="sync-status"></div>
+
+            <!-- Pre-Claim Verification Checklist Before Unlocking Badge & Certificate -->
+            <div id="claimChecklistBox" class="claim-checklist-box">
+              <h4>📋 Learner Completion &amp; Integrity Checklist (Required to Claim Badge &amp; Certificate)</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted);">
+                Please verify and check all four (4) completion requirements below before generating your official Digital Mastery Badge and Printable PDF Certificate:
+              </p>
+              <div class="checklist-items-list">
+                <label class="checklist-label">
+                  <input type="checkbox" class="claim-chk" onchange="evaluateClaimChecklist()" />
+                  <span><strong>1. Student Profile Verified:</strong> I confirm that my Full Name, Grade Level, and Section entered above are spelled accurately for my official certificate.</span>
+                </label>
+                <label class="checklist-label">
+                  <input type="checkbox" class="claim-chk" onchange="evaluateClaimChecklist()" />
+                  <span><strong>2. Lesson &amp; 4As Activities Completed:</strong> I have reviewed the 4Ms of Production, the 7 Ps Marketing Mix, and participated in the diagnostic case and group tasks.</span>
+                </label>
+                <label class="checklist-label">
+                  <input type="checkbox" class="claim-chk" onchange="evaluateClaimChecklist()" />
+                  <span><strong>3. Score &amp; Competencies Confirmed:</strong> I have verified my official assessment score and competency alignment for DLP No. 6.</span>
+                </label>
+                <label class="checklist-label">
+                  <input type="checkbox" class="claim-chk" onchange="evaluateClaimChecklist()" />
+                  <span><strong>4. Academic Honesty Pledge:</strong> I certify that I completed this randomized 20-item assessment honestly and independently in a single official attempt.</span>
+                </label>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px;">
+                <button type="button" id="claimCertBtn" class="btn-gold" disabled onclick="openCertificateModal()">
+                  🏅 Claim Digital Badge &amp; Print/Download PDF Certificate
+                </button>
+                <span id="checklistHintText" style="font-size: 0.84rem; color: #8a5a00; font-weight: 600;">
+                  Check all 4 items above to unlock your Badge &amp; Certificate.
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- =======================================================================
+         SECTION VI: DEVELOPER GOOGLE SHEETS APPS SCRIPT GUIDE (SHA-256 PROTECTED)
+         ======================================================================= -->
+    <article id="sec-dev-guide" class="lesson-section">
+      <div class="section-banner">
+        <h2>🛠️ DEVELOPER CONFIGURATION: DATABASE SYNC</h2>
+        <span class="section-tag">Developer Lock • Setup &amp; Integration Guide</span>
+      </div>
+      <div class="section-body">
+
+        <!-- Developer Access Code Gate (Hidden until SHA-256 verified) -->
+        <div id="devAccessGate" class="access-gate-box">
+          <div style="font-size: 2.2rem; margin-bottom: 6px;">🛡️</div>
+          <h3>Developer Documentation Access Gate</h3>
+          <p style="font-size: 0.92rem; color: var(--text-muted);">
+            The Google Apps Script integration code and Web App URL configuration are restricted to the instructor/developer. Enter the <strong>Developer Access Code</strong> to unlock.
+          </p>
+          <div class="access-input-group">
+            <input type="password" id="devCodeInput" class="access-input" placeholder="Enter Developer Access Code..." onkeydown="if(event.key==='Enter') verifyDevAccess()" />
+            <button type="button" class="btn-primary" onclick="verifyDevAccess()">🔑 Unlock Developer Guide</button>
+          </div>
+          <div id="devGateError" class="gate-error">❌ Incorrect Developer Access Code. Access denied.</div>
+        </div>
+
+        <!-- Unlocked Developer Guide Area (Hidden by default) -->
+        <div id="unlockedDevArea" style="display: none;">
+          <div class="standards-block" style="border-left-color: var(--teal-accent);">
+            <h3>Live Google Sheets Web App Endpoint Configuration</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 8px;">
+              Your production Database Web App URL (<code>/exec</code>) is pre-embedded in this HTML portal (and can also be updated below if needed) so student assessment submissions automatically append rows to your Google Sheet:
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+              <input type="url" id="gasWebAppUrlInput" class="worksheet-input" style="max-width: 560px; margin: 0;" value="https://script.google.com/macros/s/AKfycbzJOWidl7ZgmECFrLtB5LylrLav6vM3i530QDWHGphkAWRTAv2Oh4k_4WYj39v7fvs/exec" placeholder="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec" />
+              <button type="button" class="btn-primary" onclick="saveGasUrl()">💾 Save Web App URL</button>
+            </div>
+            <p id="gasUrlSavedMsg" style="font-size: 0.84rem; color: var(--green-success); font-weight: 700; margin-top: 6px; display: none;">
+              ✓ Google Apps Script Web App URL saved! All student quiz submissions will sync automatically.
+            </p>
+          </div>
+
+          <h3 class="sub-heading">Step-by-Step Guide: Synchronizing Assessment Results to Google Sheets</h3>
+          <ol class="enclosure-list" style="margin-bottom: 14px;">
+            <li><strong>Step 1 — Create a Google Sheet:</strong> Open <a href="https://sheets.new" target="_blank" rel="noopener">sheets.new</a>, name it <code>DLP6_Entrepreneurship_Assessment_Results</code>, and add these exact column headers in Row 1:
+              <br /><code>Timestamp | Student Name | Grade Level | Section | Score | Total Items | Percentage | Status</code>
+            </li>
+            <li><strong>Step 2 — Open Apps Script:</strong> In your Google Sheet menu, click <strong>Extensions &rarr; Apps Script</strong>.</li>
+            <li><strong>Step 3 — Paste the Apps Script Code:</strong> Delete any existing code in <code>Code.gs</code> and paste the complete script below:</li>
+          </ol>
+
+          <pre class="code-block" id="appsScriptCodeBlock">// ============================================================================
+// GOOGLE APPS SCRIPT WEBHOOK — DLP NO. 6 ASSESSMENT SYNC
+// Receives JSON POST data (Student Name, Grade Level, Section, Assessment Result)
+// ============================================================================
+function doPost(e) {
+  try {
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    var data = JSON.parse(e.postData.contents);
+
+    sheet.appendRow([
+      new Date(),
+      data.studentName || "N/A",
+      data.gradeLevel || "N/A",
+      data.section || "N/A",
+      data.score || 0,
+      data.totalItems || 20,
+      data.percentage || "0%",
+      data.status || "Completed"
+    ]);
+
+    return ContentService
+      .createTextOutput(JSON.stringify({ result: "success", message: "Row appended" }))
+      .setMimeType(ContentService.MimeType.JSON);
+  } catch (err) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ result: "error", error: err.toString() }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}</pre>
+
+          <ol class="enclosure-list" start="4">
+            <li><strong>Step 4 — Deploy as Web App:</strong> Click <strong>Deploy &rarr; New deployment</strong>. Select type <strong>Web app</strong>, set <em>Execute as</em> to <strong>Me</strong>, and set <em>Who has access</em> to <strong>Anyone</strong>. Click <strong>Deploy</strong> and authorize permissions.</li>
+            <li><strong>Step 5 — Connect URL Above:</strong> The active production endpoint URL <code>https://script.google.com/macros/s/AKfycbw7hZnCmew-9NLStFDHymn0qprI40fHIWN05DFGdvM/exec</code> is already embedded by default. You can override it anytime by pasting a new <code>/exec</code> URL above and clicking <strong>Save Web App URL</strong>.</li>
+          </ol>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- =======================================================================
+         SECTION VII: REMARKS, REFLECTION, BIBLIOGRAPHY & ENCLOSURES (A–F)
+         ======================================================================= -->
+    <article id="sec-enclosures" class="lesson-section">
+      <div class="section-banner">
+        <h2>V. REMARKS • VI. REFLECTION • VII. BIBLIOGRAPHY • VIII. ENCLOSURES (A–F)</h2>
+        <span class="section-tag">Worksheets • Rubric • Answer Key • PPT Outline • Visuals</span>
+      </div>
+      <div class="section-body">
+
+        <div class="enclosure-grid">
+          <!-- Enclosure A: Handouts & Interactive Assignment Worksheet (With localStorage Auto-Save) -->
+          <div class="enclosure-card">
+            <h4>Enclosure A: Student Handout &amp; Assignment Worksheet</h4>
+            <p style="font-size: 0.86rem; margin-bottom: 8px;">
+              <strong>Handout Summary:</strong> <em>Internal Engine (4Ms)</em> = Manpower, Method, Machine, Material. <em>External Engine (7 Ps)</em> = Product, Price, Place, Promotion, People, Process, Physical Evidence.
+            </p>
+            <p style="font-size: 0.86rem; font-weight: 700; color: var(--navy-primary);">
+              Neighborhood Micro-Enterprise Rapid Audit (Interactive Draft — Auto-Saved):
+            </p>
+            <input type="text" id="ws_student_info" class="worksheet-input" placeholder="Student Name & Grade/Section..." oninput="saveWorksheetDraft()" />
+            <input type="text" id="ws_business_observed" class="worksheet-input" placeholder="Barangay Business Observed (e.g., Carenderia, Milk Tea Stall)..." oninput="saveWorksheetDraft()" />
+            <input type="text" id="ws_four_ms" class="worksheet-input" placeholder="1. List their 4Ms (Manpower, Method, Machine, Material)..." oninput="saveWorksheetDraft()" />
+            <input type="text" id="ws_seven_ps" class="worksheet-input" placeholder="2. Identify at least 4 of their 7 Ps in action..." oninput="saveWorksheetDraft()" />
+            <textarea id="ws_recommendation" class="worksheet-input" rows="2" placeholder="3. Actionable Recommendation (Aligning 1 'M' with 1 'P')..." oninput="saveWorksheetDraft()"></textarea>
+            <div class="worksheet-save-status">
+              <span id="wsSaveStatusText">💾 Auto-saved locally on your device</span>
+              <button type="button" class="btn-secondary" style="padding: 4px 10px; font-size: 0.76rem;" onclick="clearWorksheetDraft()">Clear Draft</button>
+            </div>
+          </div>
+
+          <!-- Enclosure B: Group Rubric -->
+          <div class="enclosure-card">
+            <h4>Enclosure B: Group Application Rubric (20 Points)</h4>
+            <ul class="enclosure-list">
+              <li><strong>Accuracy &amp; Alignment of 4Ms and 7 Ps (8 pts):</strong> Clearly and accurately connects internal production capabilities with external marketing elements.</li>
+              <li><strong>Real-World Feasibility &amp; Analytical Depth (6 pts):</strong> Solutions and audit rows are realistic, practical, and rooted in operational logic.</li>
+              <li><strong>Clarity of Presentation &amp; Teamwork (6 pts):</strong> Organized visual output, confident 60-second pitch, and active participation by all members.</li>
+            </ul>
+            <div style="margin-top: 12px; padding: 10px; background: var(--navy-light); border-radius: 6px; font-size: 0.85rem;">
+              <strong>Enclosure D — Assessment Integrity Protocol:</strong><br />
+              The 20-item assessment dynamically randomizes question order and answer choices per session/reload, conceals answer keys after submission to prevent answer-key sharing, and enforces a single official attempt once synchronized to Google Sheets.
+            </div>
+          </div>
+
+          <!-- Enclosure E: PowerPoint Presentation Outline -->
+          <div class="enclosure-card">
+            <h4>Enclosure E: PowerPoint Presentation Outline (8 Slides)</h4>
+            <ul class="slide-list">
+              <li><strong>Slide 1:</strong> Title Slide — Analyzing Business Operation: Production, the 4Ms, and the 7 Ps Marketing Mix.</li>
+              <li><strong>Slide 2:</strong> Learning Objectives (KSAV) &amp; Warm-Up Prompt ("Two Sides of the Milk Tea Cup").</li>
+              <li><strong>Slide 3:</strong> Interactive Case Activity — "Viral Crisis at Cebu Cravings Bakehouse" &amp; T-Chart Instructions.</li>
+              <li><strong>Slide 4:</strong> The Dual-Engine Model — How Internal Execution (4Ms) Powers External Positioning (7 Ps).</li>
+              <li><strong>Slide 5:</strong> Deep Dive: The 4Ms of Production + Key Operational Metrics.</li>
+              <li><strong>Slide 6:</strong> Deep Dive: The 7 Ps of the Marketing Mix (Core 4 Ps + Extended 3 Ps).</li>
+              <li><strong>Slide 7:</strong> Operational Synergy Matrix &amp; Two-Step Audit (Inside-Out vs. Outside-In).</li>
+              <li><strong>Slide 8:</strong> Differentiated Group Application ("EcoSip Cebu"), 20-Item Quiz, &amp; Barangay Audit Assignment.</li>
+            </ul>
+          </div>
+
+          <!-- Enclosure F: Classroom Visuals, Signages & Cut-outs -->
+          <div class="enclosure-card">
+            <h4>Enclosure F: Visuals, Signages &amp; Sorting Cut-Outs</h4>
+            <ul class="enclosure-list">
+              <li><strong>Visual Diagram:</strong> 7 Ps of the Marketing Mix infographic for board projection.</li>
+              <li><strong>Station Signages (Table Tents):</strong>
+                <br />• Group 1: <em>4Ms–7Ps Blueprint Architects</em>
+                <br />• Group 2: <em>Bottleneck Auditors</em>
+                <br />• Group 3: <em>Strategic Pricing &amp; Value Analysts</em>
+                <br />• Group 4: <em>Ethical &amp; Eco-Operations Advocates</em>
+              </li>
+              <li><strong>Sorting Cut-Outs (Cebu Cravings Case):</strong> Overheated Deck Oven (Machine) | Bakers Confused Salt &amp; Sugar (Manpower/Method) | Flour Stockout (Material) | ₱99 TikTok Ad (Price/Promotion) | 3-Hr Delay (Process) | Unresponsive Cashier (People) | 1-Star Reviews (Physical Evidence).</li>
+            </ul>
+          </div>
+
+          <!-- V. Remarks & VI. Teacher Reflection -->
+          <div class="enclosure-card">
+            <h4>V. Remarks &amp; VI. Teacher Reflection</h4>
+            <p style="font-size: 0.86rem; margin-bottom: 8px;">
+              <strong>V. Remarks:</strong> To be accomplished after lesson delivery (note mastery level, instructional adjustments, or learners needing remediation).
+            </p>
+            <p style="font-size: 0.85rem; margin-bottom: 4px;">A. No. of learners who earned 80% in the evaluation: __________</p>
+            <p style="font-size: 0.85rem; margin-bottom: 4px;">B. No. of learners requiring remediation: __________</p>
+            <p style="font-size: 0.85rem; margin-bottom: 4px;">C. Did remedial lessons work? No. caught up: __________</p>
+            <p style="font-size: 0.85rem;">D. Teaching strategies that worked well: ________________________</p>
+          </div>
+
+          <!-- VII. Reference / Bibliography -->
+          <div class="enclosure-card">
+            <h4>VII. Reference / Bibliography</h4>
+            <ul class="enclosure-list">
+              <li>Department of Education (DepEd). (2020). <em>K to 12 Senior High School Applied Track Subject – Entrepreneurship Curriculum Guide &amp; MELCs</em>. Pasig City: DepEd Central Office.</li>
+              <li>Kotler, P., &amp; Keller, K. L. (2016). <em>Marketing Management</em> (15th ed.). Pearson Education.</li>
+              <li>Heizer, J., Render, B., &amp; Munson, C. (2020). <em>Operations Management: Sustainability and Supply Chain Management</em> (13th ed.). Pearson.</li>
+              <li>Morato, E. A. Jr. (2016). <em>Entrepreneurship</em>. Manila: Rex Book Store, Inc.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- =======================================================================
+         PRE-FOOTER EDUCATOR SUPPORT & DEVELOPER CONTROLS
+         ======================================================================= -->
+    <section class="pre-footer-actions" aria-label="Portal Support and Developer Setup">
+      <div style="font-size: 0.9rem; color: var(--text-muted);">
+        <strong>Interactive Learning Portal Controls:</strong> Support educator tools by donating any amount through Gcash account.
+      </div>
+      <div class="pre-footer-btn-group">
+        <button type="button" class="gcash-btn" onclick="openGcashModal()">💙 Support via GCash</button>
+        <button type="button" class="dev-btn" onclick="jumpToDevSection()">🛠️ Dev Setup</button>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         OFFICIAL PORTAL FOOTER
+         ======================================================================= -->
+    <footer class="portal-footer">
+      All rights reserved &copy; 2026 | Powered by: DeskBhuddy - IT solutions.
+    </footer>
+
+  </main>
+
+  <!-- =========================================================================
+       MODAL 1: GCASH DONATION DIALOG
+       ========================================================================= -->
+  <div id="gcashModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="gcashModalTitle">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" onclick="closeGcashModal()" aria-label="Close GCash Modal">✕</button>
+      <div class="gcash-header-strip">
+        <div style="font-size: 1.4rem; font-weight: 900; letter-spacing: 0.5px;">💙 GCash Educator Support</div>
+        <div style="font-size: 0.85rem; opacity: 0.92;">Help keep interactive DepEd SHS learning portals free &amp; accessible</div>
+      </div>
+      <p id="gcashModalTitle" style="font-size: 0.92rem; color: var(--text-dark); text-align: center;">
+        Thank you for supporting open educational technology! You may send any voluntary contribution via <strong>GCash Express Send</strong> using the official account details below:
+      </p>
+      <div class="gcash-details-box">
+        <div style="font-size: 0.78rem; font-weight: 700; text-transform: uppercase; color: var(--gcash-dark);">GCash Account Number</div>
+        <div class="gcash-number" id="gcashAccNum">0968-7042-059</div>
+        <div style="font-size: 0.88rem; font-weight: 700; color: var(--text-dark); margin-top: 4px;">
+          Account Name: <span style="color: var(--gcash-dark);">M****Y D******</span>
+        </div>
+        <button type="button" class="gcash-btn" style="margin-top: 12px;" onclick="copyGcashNumber()">📋 Copy GCash Number</button>
+        <div id="gcashCopyFeedback" style="font-size: 0.82rem; color: var(--green-success); font-weight: 700; margin-top: 6px; display: none;">
+          ✓ GCash number copied to clipboard!
+        </div>
+      </div>
+      <div style="text-align: center;">
+        <button type="button" class="btn-secondary" onclick="closeGcashModal()">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL 2: DIGITAL MASTERY BADGE & PRINTABLE/DOWNLOADABLE PDF CERTIFICATE
+       ========================================================================= -->
+  <div id="certModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="certModalHeading">
+    <div class="cert-modal-card">
+      <button type="button" class="modal-close-btn no-print" onclick="closeCertificateModal()" aria-label="Close Certificate">✕</button>
+
+      <!-- Earned Digital Mastery Badge Showcase -->
+      <div class="badge-showcase-strip no-print">
+        <div class="digital-badge-emblem" aria-hidden="true">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="badgeGoldGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ffd166"/>
+                <stop offset="100%" stop-color="#d99b26"/>
+              </linearGradient>
+            </defs>
+            <!-- Ribbon Tails -->
+            <polygon points="38,85 28,116 48,106 56,116 56,85" fill="#0d7377"/>
+            <polygon points="82,85 92,116 72,106 64,116 64,85" fill="#0d7377"/>
+            <!-- Outer Scalloped Medal -->
+            <circle cx="60" cy="54" r="44" fill="url(#badgeGoldGrad)" stroke="#ffffff" stroke-width="2.5"/>
+            <circle cx="60" cy="54" r="36" fill="#17365d" stroke="#ffd166" stroke-width="2"/>
+            <!-- Star & Text -->
+            <polygon points="60,24 64,34 75,34 66,40 69,50 60,44 51,50 54,40 45,34 56,34" fill="#ffd166"/>
+            <text x="60" y="63" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#ffffff">4Ms &amp; 7Ps</text>
+            <text x="60" y="75" text-anchor="middle" font-size="8" font-weight="bold" fill="#ffd166">STRATEGIST</text>
+          </svg>
+        </div>
+        <div class="badge-info-text">
+          <span class="badge-tier-pill" id="earnedBadgeTier">🏅 Official Digital Mastery Badge Unlocked</span>
+          <h3 style="font-size: 1.2rem; margin-bottom: 4px;" id="earnedBadgeTitle">4Ms &amp; 7 Ps Operations Strategist Badge</h3>
+          <p style="font-size: 0.88rem; opacity: 0.92;" id="earnedBadgeDesc">
+            Awarded for demonstrating verified competence in aligning Internal Production Operations (4Ms) with the External Marketing Mix (7 Ps).
+          </p>
+        </div>
+      </div>
+
+      <!-- Official Printable / PDF-Exportable Certificate -->
+      <div class="certificate-frame" id="printableCertificate">
+        <div class="cert-top-emblems">
+          <div class="cert-seal-badge">
+            <span>DepEd</span>
+            <span style="font-size: 0.52rem; color: #ffd166;">REGION VII</span>
+          </div>
+          <!-- Embedded Crest Badge on Certificate -->
+          <div style="width: 64px; height: 64px;" aria-hidden="true">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="45" fill="#d99b26" stroke="#17365d" stroke-width="3"/>
+              <circle cx="50" cy="50" r="36" fill="#17365d"/>
+              <polygon points="50,18 55,32 70,32 58,41 62,55 50,46 38,55 42,41 30,32 45,32" fill="#ffd166"/>
+              <text x="50" y="72" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">4Ms•7Ps</text>
+            </svg>
+          </div>
+        </div>
+
+        <div style="font-size: 0.84rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">
+          Republic of the Philippines • Department of Education • Region VII<br />
+          Division of Cebu City • Don Vicente Rama Memorial National High School
+        </div>
+
+        <h2 id="certModalHeading" class="cert-title">Certificate of Completion &amp; Mastery</h2>
+        <p style="font-size: 0.96rem; color: var(--text-muted); font-style: italic;">This official credential and digital badge are proudly awarded to</p>
+
+        <div class="cert-recipient" id="certStudentName">Juan Dela Cruz</div>
+
+        <div class="cert-details-grid">
+          <div class="cert-detail-chip"><strong>Grade Level:</strong> <span id="certGradeLevel">Grade 12</span></div>
+          <div class="cert-detail-chip"><strong>Section:</strong> <span id="certSection">Section</span></div>
+          <div class="cert-detail-chip"><strong>Assessment Score:</strong> <span id="certScoreText" style="color: var(--green-success); font-weight: 800;">20 / 20 (100%)</span></div>
+          <div class="cert-detail-chip"><strong>Date Completed:</strong> <span id="certDateText">Date Issued</span></div>
+        </div>
+
+        <p style="font-size: 0.94rem; max-width: 650px; margin: 0 auto; color: var(--text-dark); line-height: 1.65;">
+          for successfully completing the Senior High School Applied Track interactive learning module, fulfilling all learner verification requirements, and passing the randomized 20-Item Mastery Assessment in
+          <strong>Entrepreneurship — DLP No. 6: Analyzing Business Operation (Production, the 4Ms, and the 7 Ps Marketing Mix)</strong>
+          <em>(Competency Codes: TLE_ICTAN11/12EM-Ia-1 &amp; TLE_ICTAN11/12EM-Ia-2)</em>.
+        </p>
+
+        <div class="cert-meta-row">
+          <div class="cert-sig-line">
+            <strong id="certDateSig">Date Completed</strong><br />
+            <span style="color: var(--text-muted); font-size: 0.8rem;">Date Issued</span>
+          </div>
+          <div class="cert-sig-line">
+            <strong>Entrepreneurship Subject Teacher</strong><br />
+            <span style="color: var(--text-muted); font-size: 0.8rem;">Senior High School Department</span>
+          </div>
+          <div class="cert-sig-line">
+            <strong>School Principal / SHS Coordinator</strong><br />
+            <span style="color: var(--text-muted); font-size: 0.8rem;">Don Vicente Rama Memorial NHS</span>
+          </div>
+        </div>
+
+        <div class="cert-id-footer" id="certVerificationCode">
+          Credential ID: DLP6-ENTREP-2026-VERIFIED | Badge: 4Ms &amp; 7 Ps Operations Strategist
+        </div>
+      </div>
+
+      <div class="no-print" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 16px;">
+        <button type="button" class="btn-primary" onclick="printCertificate()">🖨 Print / Download Certificate as PDF</button>
+        <button type="button" class="btn-secondary" onclick="closeCertificateModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       COOKIE CONSENT NOTIFICATION BANNER (APPEARS AFTER A FEW SECONDS ON LOAD)
+       ========================================================================= -->
+  <div id="cookieConsentBanner" class="cookie-banner" role="region" aria-label="Cookie Consent Notification">
+    <div style="flex: 1; min-width: 260px; font-size: 0.88rem;">
+      <strong>🍪 Local Storage &amp; Cookies Notice:</strong> This interactive lesson portal saves cookies and local preferences on your device for faster performance, timer state, and offline progress caching. Do you accept saving cookies on your device?
+    </div>
+    <div class="cookie-actions">
+      <button type="button" class="btn-gold" style="padding: 8px 16px; font-size: 0.85rem;" onclick="handleCookieChoice('accepted')">✓ Accept Cookies</button>
+      <button type="button" class="btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" onclick="handleCookieChoice('declined')">✕ Decline</button>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       EMBEDDED JAVASCRIPT FOR CLASSROOM INTERACTIVITY & SECURITY
+       Includes:
+       1. Live 60-Minute Classroom Countdown Timer with Activity Presets
+       2. Interactive Sticky Section Navigation Filter Tabs & Progress Tracker
+       3. Instant Concept Search & Highlighter
+       4. Interactive Digital T-Chart Sorter ("Cebu Cravings Bakehouse")
+       5. HOTS Reflective Question Accordion
+       6. SHA-256 Access Code Gates (Student & Developer — No Plaintext Passwords)
+       7. Randomized 20-Item Mastery Assessment Engine (Fisher-Yates Shuffle with
+          Aligned Answer Keys on every page reload, No Answer Reveal on Questionnaire
+          After Submit, and Single-Attempt Lock Once Submitted to Embedded Google
+          Apps Script /exec URL) + Pre-Claim Checklist
+       8. Student Assignment Worksheet localStorage Auto-Save & Restore
+       9. GCash Donation Modal, Digital Badge + PDF Certificate Generator & Delayed
+          Cookie Notification
+       ========================================================================= -->
+       <script src="script.js" defer></script>
+<!--
+  <script>
+  </script>
+-->
+</body>
+</html>
