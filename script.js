@@ -168,7 +168,7 @@
        Uses Web Crypto API (crypto.subtle.digest) to hash user input in SHA-256
        and compare against pre-computed hexadecimal SHA-256 digests.
        ------------------------------------------------------------------------- */
-    const STUDENT_ACCESS_SHA256 = "7d0f0b69d15ddb2d878d5e5f4f246208526d570473fe7a97c78027b5e59adbdf";
+    const STUDENT_ACCESS_SHA256 = "51d661e8997ed17128eb6531a0a4e24a54decbae441c4ec60c16b7a0306745bc";
     const DEVELOPER_ACCESS_SHA256 = "fd74bdd901857b89f5737e5352a2a8a2d1f000aa4bed4aee47c95afaa37d0f99";
 
     async function computeSHA256Hex(plainText) {
