@@ -889,14 +889,14 @@
           </div>
 
           <div class="shuffle-notice-pill">
-            🔀 Dynamic Randomization &amp; Integrity Shield Active: Questions and choices are freshly shuffled on every reload, answers remain hidden after submission, and one official submission is permitted once synced to Google Sheets.
+            🔀 Dynamic Randomization &amp; Integrity Shield Active: Questions and choices are freshly shuffled on every reload, answers remain hidden after submission, and one official submission is permitted once synced to DataBase.
           </div>
 
           <p style="margin-bottom: 14px;">
             <strong>Directions:</strong> Fill in your complete student details below (required for Database synchronization, Digital Mastery Badge, and Certificate of Completion), answer all <strong>20 items</strong>, and click <strong>"Submit, Grade &amp; Sync to Database"</strong>.
           </p>
 
-          <!-- Student Identification Fields for Google Sheets & Certificate -->
+          <!-- Student Identification Fields for DataBase & Certificate -->
           <div class="student-info-bar">
             <div>
               <label for="stuFullName">Student's Full Name *</label>
@@ -917,12 +917,12 @@
             <div id="quiz20Container"></div>
 
             <div class="quiz-controls">
-              <button type="button" id="submitQuiz20Btn" class="btn-primary" onclick="gradeAndSyncQuiz20()">✅ Submit, Grade &amp; Sync to Google Sheets</button>
+              <button type="button" id="submitQuiz20Btn" class="btn-primary" onclick="gradeAndSyncQuiz20()">✅ Submit, Grade &amp; Sync to Database</button>
               <button type="button" id="resetQuiz20Btn" class="btn-secondary" onclick="resetQuiz20()">🔄 Reset &amp; Re-Shuffle Assessment</button>
               <div id="scoreBanner" class="score-banner"></div>
             </div>
 
-            <!-- Live Google Sheets Synchronization Status Message -->
+            <!-- Live Database Synchronization Status Message -->
             <div id="syncStatusBox" class="sync-status"></div>
 
             <!-- Pre-Claim Verification Checklist Before Unlocking Badge & Certificate -->
@@ -974,12 +974,12 @@
       </div>
       <div class="section-body">
 
-        <!-- Developer Access Code Gate (Hidden until SHA-256 verified) -->
+        <!-- Developer Access Code Gate (Hidden until SHARON verified) -->
         <div id="devAccessGate" class="access-gate-box">
           <div style="font-size: 2.2rem; margin-bottom: 6px;">🛡️</div>
           <h3>Developer Documentation Access Gate</h3>
           <p style="font-size: 0.92rem; color: var(--text-muted);">
-            The Google Apps Script integration code and Web App URL configuration are restricted to the instructor/developer. Enter the <strong>Developer Access Code</strong> to unlock.
+            The Databaes app Script integration code and Web App URL configuration are restricted to the instructor/developer. Enter the <strong>Developer Access Code</strong> to unlock.
           </p>
           <div class="access-input-group">
             <input type="password" id="devCodeInput" class="access-input" placeholder="Enter Developer Access Code..." onkeydown="if(event.key==='Enter') verifyDevAccess()" />
@@ -991,20 +991,20 @@
         <!-- Unlocked Developer Guide Area (Hidden by default) -->
         <div id="unlockedDevArea" style="display: none;">
           <div class="standards-block" style="border-left-color: var(--teal-accent);">
-            <h3>Live Google Sheets Web App Endpoint Configuration</h3>
+            <h3>Live Database Web App Endpoint Configuration</h3>
             <p style="font-size: 0.9rem; margin-bottom: 8px;">
-              Your production Database Web App URL (<code>/exec</code>) is pre-embedded in this HTML portal (and can also be updated below if needed) so student assessment submissions automatically append rows to your Google Sheet:
+              Your production Database Web App URL (<code>/exec</code>) is pre-embedded in this HTML portal (and can also be updated below if needed) so student assessment submissions automatically append rows to your Database:
             </p>
             <div style="display: flex; flex-wrap: wrap; gap: 10px;">
               <input type="url" id="gasWebAppUrlInput" class="worksheet-input" style="max-width: 560px; margin: 0;" value="https://script.google.com/macros/s/AKfycbzJOWidl7ZgmECFrLtB5LylrLav6vM3i530QDWHGphkAWRTAv2Oh4k_4WYj39v7fvs/exec" placeholder="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec" />
               <button type="button" class="btn-primary" onclick="saveGasUrl()">💾 Save Web App URL</button>
             </div>
             <p id="gasUrlSavedMsg" style="font-size: 0.84rem; color: var(--green-success); font-weight: 700; margin-top: 6px; display: none;">
-              ✓ Google Apps Script Web App URL saved! All student quiz submissions will sync automatically.
+              ✓ Database Apps Script Web App URL saved! All student quiz submissions will sync automatically.
             </p>
           </div>
 
-          <h3 class="sub-heading">Step-by-Step Guide: Synchronizing Assessment Results to Google Sheets</h3> <a href="https://docs.google.com/spreadsheets/d/1u3rtS5UeFNE5C7hPi_vkvZQiHxEq-1-dyFT9ADk5Zz8/edit?usp=sharing" target="_blank" class="link-button">Database link</a>
+          <h3 class="sub-heading">Step-by-Step Guide: Synchronizing Assessment Results to Database</h3> <a href="https://docs.google.com/spreadsheets/d/1u3rtS5UeFNE5C7hPi_vkvZQiHxEq-1-dyFT9ADk5Zz8/edit?usp=sharing" target="_blank" class="link-button">Database link</a>
 
           <ol class="enclosure-list" style="margin-bottom: 14px;">
             <li><strong>Step 1 — Create a Google Sheet:</strong> Open <a href="https://sheets.new" target="_blank" rel="noopener">sheets.new</a>, name it <code>DLP6_Entrepreneurship_Assessment_Results</code>, and add these exact column headers in Row 1:
